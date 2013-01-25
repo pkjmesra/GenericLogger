@@ -1,0 +1,855 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		84C08C89149F6B42001D6500 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84C08C88149F6B42001D6500 /* Foundation.framework */; };
+		84C08CAE149F6C7A001D6500 /* WebLoggerHTTPConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = 84C08CA1149F6C7A001D6500 /* WebLoggerHTTPConnection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84C08CAF149F6C7A001D6500 /* WebLoggerHTTPConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C08CA2149F6C7A001D6500 /* WebLoggerHTTPConnection.m */; };
+		84C08CB4149F6C7A001D6500 /* WebSocketLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 84C08CA7149F6C7A001D6500 /* WebSocketLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84C08CB5149F6C7A001D6500 /* WebSocketLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C08CA8149F6C7A001D6500 /* WebSocketLogger.m */; };
+		84C08CC6149F6DA7001D6500 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84C08CC5149F6DA7001D6500 /* CFNetwork.framework */; };
+		E341B18916AEAF81000046E1 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E341B18816AEAF81000046E1 /* CoreFoundation.framework */; };
+		E341B19C16AEB04B000046E1 /* indexlog.html in Resources */ = {isa = PBXBuildFile; fileRef = E341B19716AEB04B000046E1 /* indexlog.html */; };
+		E341B19D16AEB04B000046E1 /* jquery-1.4.2.min.js in Resources */ = {isa = PBXBuildFile; fileRef = E341B19816AEB04B000046E1 /* jquery-1.4.2.min.js */; };
+		E341B19E16AEB04B000046E1 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = E341B19916AEB04B000046E1 /* README.txt */; };
+		E341B19F16AEB04B000046E1 /* socket.html in Resources */ = {isa = PBXBuildFile; fileRef = E341B19A16AEB04B000046E1 /* socket.html */; };
+		E341B1A016AEB04B000046E1 /* styles.css in Resources */ = {isa = PBXBuildFile; fileRef = E341B19B16AEB04B000046E1 /* styles.css */; };
+		E341B24716AEB281000046E1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3FF05C214AB1C17009CFCB9 /* UIKit.framework */; };
+		E341B24816AEB281000046E1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84C08C88149F6B42001D6500 /* Foundation.framework */; };
+		E341B24916AEB281000046E1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E341B1AF16AEB174000046E1 /* CoreGraphics.framework */; };
+		E341B24F16AEB281000046E1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E341B24D16AEB281000046E1 /* InfoPlist.strings */; };
+		E341B25116AEB281000046E1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E341B25016AEB281000046E1 /* main.m */; };
+		E341B25716AEB281000046E1 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = E341B25616AEB281000046E1 /* Default.png */; };
+		E341B25916AEB281000046E1 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E341B25816AEB281000046E1 /* Default@2x.png */; };
+		E341B25B16AEB281000046E1 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E341B25A16AEB281000046E1 /* Default-568h@2x.png */; };
+		E341B26A16AEB2A0000046E1 /* libGenericLoggerFramework.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84C08C85149F6B42001D6500 /* libGenericLoggerFramework.a */; };
+		E341B27116AEB305000046E1 /* WebServerIPhoneAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E341B26E16AEB305000046E1 /* WebServerIPhoneAppDelegate.m */; };
+		E341B27216AEB305000046E1 /* WebServerIPhoneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E341B27016AEB305000046E1 /* WebServerIPhoneViewController.m */; };
+		E341B28816AEB451000046E1 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84C08CC5149F6DA7001D6500 /* CFNetwork.framework */; };
+		E341B28B16AEB5FC000046E1 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = E341B28916AEB5FC000046E1 /* MainWindow.xib */; };
+		E341B28C16AEB5FC000046E1 /* WebServerIPhoneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E341B28A16AEB5FC000046E1 /* WebServerIPhoneViewController.xib */; };
+		E341B2A116AEB91F000046E1 /* GenericLoggerFramework.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E341B18716AEAF81000046E1 /* GenericLoggerFramework.bundle */; };
+		E36B92BB16B2783C00EDED50 /* libCocoaHTTPServer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E36B92A916B2781000EDED50 /* libCocoaHTTPServer.a */; };
+		E36B92BC16B2783C00EDED50 /* libCocoaLumberjack.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E36B92B416B2781800EDED50 /* libCocoaLumberjack.a */; };
+		E3D7BE6816AEA22C006E6F40 /* GenericLoggerFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = E3D7BE6616AEA22C006E6F40 /* GenericLoggerFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E3D7BE9816AEA5EF006E6F40 /* CustomLogFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = E3D7BE8C16AEA5EF006E6F40 /* CustomLogFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E3D7BE9916AEA5EF006E6F40 /* CustomLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = E3D7BE8D16AEA5EF006E6F40 /* CustomLogFormatter.m */; };
+		E3D7BE9B16AEA5EF006E6F40 /* TestFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = E3D7BE8F16AEA5EF006E6F40 /* TestFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E3D7BE9C16AEA5EF006E6F40 /* TestFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = E3D7BE9016AEA5EF006E6F40 /* TestFormatter.m */; };
+		E3D7BE9D16AEA5EF006E6F40 /* CustomLogLevel.h in Headers */ = {isa = PBXBuildFile; fileRef = E3D7BE9216AEA5EF006E6F40 /* CustomLogLevel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E3D7BE9E16AEA5EF006E6F40 /* GlobalLogging.h in Headers */ = {isa = PBXBuildFile; fileRef = E3D7BE9316AEA5EF006E6F40 /* GlobalLogging.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E3D7BEA016AEA5EF006E6F40 /* FineGrainedLog.h in Headers */ = {isa = PBXBuildFile; fileRef = E3D7BE9616AEA5EF006E6F40 /* FineGrainedLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E3FF05C314AB1C17009CFCB9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3FF05C214AB1C17009CFCB9 /* UIKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E341B19416AEB026000046E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84C08C7C149F6B42001D6500 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E341B18616AEAF81000046E1;
+			remoteInfo = GenericLoggerFrameworkResources;
+		};
+		E341B26816AEB296000046E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84C08C7C149F6B42001D6500 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84C08C84149F6B42001D6500;
+			remoteInfo = GenericLoggerFramework;
+		};
+		E36B92A816B2781000EDED50 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E36B929D16B2781000EDED50 /* CocoaHTTPServer.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 84C08BBF149F64A0001D6500;
+			remoteInfo = CocoaHTTPServer;
+		};
+		E36B92B316B2781800EDED50 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E36B92AD16B2781800EDED50 /* CocoaLumberjack.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 84C08C2C149F676D001D6500;
+			remoteInfo = CocoaLumberjack;
+		};
+		E36B92B516B2781800EDED50 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E36B92AD16B2781800EDED50 /* CocoaLumberjack.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E3B9551C1681D2ED006CFD3A;
+			remoteInfo = CocoaLumberjackResources;
+		};
+		E36B92B716B2782B00EDED50 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E36B92AD16B2781800EDED50 /* CocoaLumberjack.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 84C08C2B149F676D001D6500;
+			remoteInfo = CocoaLumberjack;
+		};
+		E36B92B916B2782B00EDED50 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E36B929D16B2781000EDED50 /* CocoaHTTPServer.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 84C08BBE149F64A0001D6500;
+			remoteInfo = CocoaHTTPServer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		84C08C85149F6B42001D6500 /* libGenericLoggerFramework.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libGenericLoggerFramework.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		84C08C88149F6B42001D6500 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		84C08C8C149F6B42001D6500 /* GenericLoggerFramework-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GenericLoggerFramework-Prefix.pch"; sourceTree = "<group>"; };
+		84C08CA1149F6C7A001D6500 /* WebLoggerHTTPConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebLoggerHTTPConnection.h; sourceTree = "<group>"; };
+		84C08CA2149F6C7A001D6500 /* WebLoggerHTTPConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebLoggerHTTPConnection.m; sourceTree = "<group>"; };
+		84C08CA7149F6C7A001D6500 /* WebSocketLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebSocketLogger.h; sourceTree = "<group>"; };
+		84C08CA8149F6C7A001D6500 /* WebSocketLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebSocketLogger.m; sourceTree = "<group>"; };
+		84C08CC5149F6DA7001D6500 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		E341B18716AEAF81000046E1 /* GenericLoggerFramework.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GenericLoggerFramework.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		E341B18816AEAF81000046E1 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		E341B18E16AEAF82000046E1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E341B19716AEB04B000046E1 /* indexlog.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = indexlog.html; sourceTree = "<group>"; };
+		E341B19816AEB04B000046E1 /* jquery-1.4.2.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "jquery-1.4.2.min.js"; sourceTree = "<group>"; };
+		E341B19916AEB04B000046E1 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		E341B19A16AEB04B000046E1 /* socket.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = socket.html; sourceTree = "<group>"; };
+		E341B19B16AEB04B000046E1 /* styles.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = styles.css; sourceTree = "<group>"; };
+		E341B1AF16AEB174000046E1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E341B24516AEB281000046E1 /* GenericLoggerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GenericLoggerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E341B24C16AEB281000046E1 /* GenericLoggerDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GenericLoggerDemo-Info.plist"; sourceTree = "<group>"; };
+		E341B24E16AEB281000046E1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E341B25016AEB281000046E1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E341B25216AEB281000046E1 /* GenericLoggerDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GenericLoggerDemo-Prefix.pch"; sourceTree = "<group>"; };
+		E341B25616AEB281000046E1 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		E341B25816AEB281000046E1 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		E341B25A16AEB281000046E1 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		E341B26D16AEB305000046E1 /* WebServerIPhoneAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebServerIPhoneAppDelegate.h; sourceTree = "<group>"; };
+		E341B26E16AEB305000046E1 /* WebServerIPhoneAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebServerIPhoneAppDelegate.m; sourceTree = "<group>"; };
+		E341B26F16AEB305000046E1 /* WebServerIPhoneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebServerIPhoneViewController.h; sourceTree = "<group>"; };
+		E341B27016AEB305000046E1 /* WebServerIPhoneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebServerIPhoneViewController.m; sourceTree = "<group>"; };
+		E341B28916AEB5FC000046E1 /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		E341B28A16AEB5FC000046E1 /* WebServerIPhoneViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WebServerIPhoneViewController.xib; sourceTree = "<group>"; };
+		E36B929D16B2781000EDED50 /* CocoaHTTPServer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CocoaHTTPServer.xcodeproj; path = ../CocoaHTTPServer/CocoaHTTPServer.xcodeproj; sourceTree = "<group>"; };
+		E36B92AD16B2781800EDED50 /* CocoaLumberjack.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CocoaLumberjack.xcodeproj; path = ../CocoaLumberjack/CocoaLumberjack.xcodeproj; sourceTree = "<group>"; };
+		E3D7BE6616AEA22C006E6F40 /* GenericLoggerFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GenericLoggerFramework.h; sourceTree = "<group>"; };
+		E3D7BE8C16AEA5EF006E6F40 /* CustomLogFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomLogFormatter.h; sourceTree = "<group>"; };
+		E3D7BE8D16AEA5EF006E6F40 /* CustomLogFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomLogFormatter.m; sourceTree = "<group>"; };
+		E3D7BE8E16AEA5EF006E6F40 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		E3D7BE8F16AEA5EF006E6F40 /* TestFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestFormatter.h; sourceTree = "<group>"; };
+		E3D7BE9016AEA5EF006E6F40 /* TestFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestFormatter.m; sourceTree = "<group>"; };
+		E3D7BE9216AEA5EF006E6F40 /* CustomLogLevel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomLogLevel.h; sourceTree = "<group>"; };
+		E3D7BE9316AEA5EF006E6F40 /* GlobalLogging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalLogging.h; sourceTree = "<group>"; };
+		E3D7BE9416AEA5EF006E6F40 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		E3D7BE9616AEA5EF006E6F40 /* FineGrainedLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FineGrainedLog.h; sourceTree = "<group>"; };
+		E3D7BE9716AEA5EF006E6F40 /* ReadMe.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ReadMe.txt; sourceTree = "<group>"; };
+		E3FF05C214AB1C17009CFCB9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84C08C82149F6B42001D6500 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3FF05C314AB1C17009CFCB9 /* UIKit.framework in Frameworks */,
+				84C08CC6149F6DA7001D6500 /* CFNetwork.framework in Frameworks */,
+				84C08C89149F6B42001D6500 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E341B18416AEAF81000046E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E341B18916AEAF81000046E1 /* CoreFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E341B24216AEB281000046E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E36B92BB16B2783C00EDED50 /* libCocoaHTTPServer.a in Frameworks */,
+				E36B92BC16B2783C00EDED50 /* libCocoaLumberjack.a in Frameworks */,
+				E341B28816AEB451000046E1 /* CFNetwork.framework in Frameworks */,
+				E341B26A16AEB2A0000046E1 /* libGenericLoggerFramework.a in Frameworks */,
+				E341B24716AEB281000046E1 /* UIKit.framework in Frameworks */,
+				E341B24816AEB281000046E1 /* Foundation.framework in Frameworks */,
+				E341B24916AEB281000046E1 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		84C08C7A149F6B42001D6500 = {
+			isa = PBXGroup;
+			children = (
+				84C08C8A149F6B42001D6500 /* WebLogger */,
+				E341B18A16AEAF81000046E1 /* GenericLoggerFrameworkResources */,
+				E341B24A16AEB281000046E1 /* GenericLoggerDemo */,
+				84C08C87149F6B42001D6500 /* Frameworks */,
+				84C08C86149F6B42001D6500 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		84C08C86149F6B42001D6500 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84C08C85149F6B42001D6500 /* libGenericLoggerFramework.a */,
+				E341B18716AEAF81000046E1 /* GenericLoggerFramework.bundle */,
+				E341B24516AEB281000046E1 /* GenericLoggerDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84C08C87149F6B42001D6500 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E36B92AD16B2781800EDED50 /* CocoaLumberjack.xcodeproj */,
+				E36B929D16B2781000EDED50 /* CocoaHTTPServer.xcodeproj */,
+				E3FF05C214AB1C17009CFCB9 /* UIKit.framework */,
+				84C08CC5149F6DA7001D6500 /* CFNetwork.framework */,
+				84C08C88149F6B42001D6500 /* Foundation.framework */,
+				E341B18816AEAF81000046E1 /* CoreFoundation.framework */,
+				E341B1AF16AEB174000046E1 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		84C08C8A149F6B42001D6500 /* WebLogger */ = {
+			isa = PBXGroup;
+			children = (
+				E3D7BE8B16AEA5EF006E6F40 /* CustomFormatters */,
+				E3D7BE9116AEA5EF006E6F40 /* CustomLogLevel */,
+				E3D7BE9516AEA5EF006E6F40 /* FineGrainedLogging */,
+				84C08CA0149F6C7A001D6500 /* Classes */,
+				84C08C8B149F6B42001D6500 /* Supporting Files */,
+				E3D7BE6616AEA22C006E6F40 /* GenericLoggerFramework.h */,
+			);
+			path = WebLogger;
+			sourceTree = "<group>";
+		};
+		84C08C8B149F6B42001D6500 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				84C08C8C149F6B42001D6500 /* GenericLoggerFramework-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		84C08CA0149F6C7A001D6500 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				84C08CA1149F6C7A001D6500 /* WebLoggerHTTPConnection.h */,
+				84C08CA2149F6C7A001D6500 /* WebLoggerHTTPConnection.m */,
+				84C08CA7149F6C7A001D6500 /* WebSocketLogger.h */,
+				84C08CA8149F6C7A001D6500 /* WebSocketLogger.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		E341B18A16AEAF81000046E1 /* GenericLoggerFrameworkResources */ = {
+			isa = PBXGroup;
+			children = (
+				E341B19616AEB04B000046E1 /* Web */,
+				E341B18B16AEAF81000046E1 /* Supporting Files */,
+			);
+			path = GenericLoggerFrameworkResources;
+			sourceTree = "<group>";
+		};
+		E341B18B16AEAF81000046E1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E341B18D16AEAF82000046E1 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E341B19616AEB04B000046E1 /* Web */ = {
+			isa = PBXGroup;
+			children = (
+				E341B19716AEB04B000046E1 /* indexlog.html */,
+				E341B19816AEB04B000046E1 /* jquery-1.4.2.min.js */,
+				E341B19916AEB04B000046E1 /* README.txt */,
+				E341B19A16AEB04B000046E1 /* socket.html */,
+				E341B19B16AEB04B000046E1 /* styles.css */,
+			);
+			path = Web;
+			sourceTree = SOURCE_ROOT;
+		};
+		E341B24A16AEB281000046E1 /* GenericLoggerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				E341B26D16AEB305000046E1 /* WebServerIPhoneAppDelegate.h */,
+				E341B26E16AEB305000046E1 /* WebServerIPhoneAppDelegate.m */,
+				E341B26F16AEB305000046E1 /* WebServerIPhoneViewController.h */,
+				E341B27016AEB305000046E1 /* WebServerIPhoneViewController.m */,
+				E341B24B16AEB281000046E1 /* Supporting Files */,
+			);
+			path = GenericLoggerDemo;
+			sourceTree = "<group>";
+		};
+		E341B24B16AEB281000046E1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E341B28916AEB5FC000046E1 /* MainWindow.xib */,
+				E341B28A16AEB5FC000046E1 /* WebServerIPhoneViewController.xib */,
+				E341B24C16AEB281000046E1 /* GenericLoggerDemo-Info.plist */,
+				E341B24D16AEB281000046E1 /* InfoPlist.strings */,
+				E341B25016AEB281000046E1 /* main.m */,
+				E341B25216AEB281000046E1 /* GenericLoggerDemo-Prefix.pch */,
+				E341B25616AEB281000046E1 /* Default.png */,
+				E341B25816AEB281000046E1 /* Default@2x.png */,
+				E341B25A16AEB281000046E1 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E36B929E16B2781000EDED50 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E36B92A916B2781000EDED50 /* libCocoaHTTPServer.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E36B92AE16B2781800EDED50 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E36B92B416B2781800EDED50 /* libCocoaLumberjack.a */,
+				E36B92B616B2781800EDED50 /* CocoaLumberjack.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E3D7BE8B16AEA5EF006E6F40 /* CustomFormatters */ = {
+			isa = PBXGroup;
+			children = (
+				E3D7BE8C16AEA5EF006E6F40 /* CustomLogFormatter.h */,
+				E3D7BE8D16AEA5EF006E6F40 /* CustomLogFormatter.m */,
+				E3D7BE8E16AEA5EF006E6F40 /* README.txt */,
+				E3D7BE8F16AEA5EF006E6F40 /* TestFormatter.h */,
+				E3D7BE9016AEA5EF006E6F40 /* TestFormatter.m */,
+			);
+			path = CustomFormatters;
+			sourceTree = SOURCE_ROOT;
+		};
+		E3D7BE9116AEA5EF006E6F40 /* CustomLogLevel */ = {
+			isa = PBXGroup;
+			children = (
+				E3D7BE9216AEA5EF006E6F40 /* CustomLogLevel.h */,
+				E3D7BE9316AEA5EF006E6F40 /* GlobalLogging.h */,
+				E3D7BE9416AEA5EF006E6F40 /* README.txt */,
+			);
+			path = CustomLogLevel;
+			sourceTree = SOURCE_ROOT;
+		};
+		E3D7BE9516AEA5EF006E6F40 /* FineGrainedLogging */ = {
+			isa = PBXGroup;
+			children = (
+				E3D7BE9616AEA5EF006E6F40 /* FineGrainedLog.h */,
+				E3D7BE9716AEA5EF006E6F40 /* ReadMe.txt */,
+			);
+			path = FineGrainedLogging;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		84C08C83149F6B42001D6500 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3D7BE6816AEA22C006E6F40 /* GenericLoggerFramework.h in Headers */,
+				E3D7BE9816AEA5EF006E6F40 /* CustomLogFormatter.h in Headers */,
+				84C08CAE149F6C7A001D6500 /* WebLoggerHTTPConnection.h in Headers */,
+				84C08CB4149F6C7A001D6500 /* WebSocketLogger.h in Headers */,
+				E3D7BE9D16AEA5EF006E6F40 /* CustomLogLevel.h in Headers */,
+				E3D7BE9B16AEA5EF006E6F40 /* TestFormatter.h in Headers */,
+				E3D7BE9E16AEA5EF006E6F40 /* GlobalLogging.h in Headers */,
+				E3D7BEA016AEA5EF006E6F40 /* FineGrainedLog.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		84C08C84149F6B42001D6500 /* GenericLoggerFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84C08C92149F6B42001D6500 /* Build configuration list for PBXNativeTarget "GenericLoggerFramework" */;
+			buildPhases = (
+				84C08C81149F6B42001D6500 /* Sources */,
+				84C08C82149F6B42001D6500 /* Frameworks */,
+				84C08C83149F6B42001D6500 /* Headers */,
+				84C08CF0149F72E6001D6500 /* Resources */,
+				E3D7BE6116AEA1C3006E6F40 /* PrepareFramework */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E36B92B816B2782B00EDED50 /* PBXTargetDependency */,
+				E36B92BA16B2782B00EDED50 /* PBXTargetDependency */,
+				E341B19516AEB026000046E1 /* PBXTargetDependency */,
+			);
+			name = GenericLoggerFramework;
+			productName = WebLogger;
+			productReference = 84C08C85149F6B42001D6500 /* libGenericLoggerFramework.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		E341B18616AEAF81000046E1 /* GenericLoggerFrameworkResources */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E341B19116AEAF82000046E1 /* Build configuration list for PBXNativeTarget "GenericLoggerFrameworkResources" */;
+			buildPhases = (
+				E341B18316AEAF81000046E1 /* Sources */,
+				E341B18416AEAF81000046E1 /* Frameworks */,
+				E341B18516AEAF81000046E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GenericLoggerFrameworkResources;
+			productName = GenericLoggerFrameworkResources;
+			productReference = E341B18716AEAF81000046E1 /* GenericLoggerFramework.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		E341B24416AEB281000046E1 /* GenericLoggerDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E341B26516AEB282000046E1 /* Build configuration list for PBXNativeTarget "GenericLoggerDemo" */;
+			buildPhases = (
+				E341B24116AEB281000046E1 /* Sources */,
+				E341B24216AEB281000046E1 /* Frameworks */,
+				E341B24316AEB281000046E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E341B26916AEB296000046E1 /* PBXTargetDependency */,
+			);
+			name = GenericLoggerDemo;
+			productName = GenericLoggerDemo;
+			productReference = E341B24516AEB281000046E1 /* GenericLoggerDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84C08C7C149F6B42001D6500 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 84C08C7F149F6B42001D6500 /* Build configuration list for PBXProject "GenericLoggerFramework" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 84C08C7A149F6B42001D6500;
+			productRefGroup = 84C08C86149F6B42001D6500 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = E36B929E16B2781000EDED50 /* Products */;
+					ProjectRef = E36B929D16B2781000EDED50 /* CocoaHTTPServer.xcodeproj */;
+				},
+				{
+					ProductGroup = E36B92AE16B2781800EDED50 /* Products */;
+					ProjectRef = E36B92AD16B2781800EDED50 /* CocoaLumberjack.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				84C08C84149F6B42001D6500 /* GenericLoggerFramework */,
+				E341B18616AEAF81000046E1 /* GenericLoggerFrameworkResources */,
+				E341B24416AEB281000046E1 /* GenericLoggerDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		E36B92A916B2781000EDED50 /* libCocoaHTTPServer.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCocoaHTTPServer.a;
+			remoteRef = E36B92A816B2781000EDED50 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E36B92B416B2781800EDED50 /* libCocoaLumberjack.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCocoaLumberjack.a;
+			remoteRef = E36B92B316B2781800EDED50 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E36B92B616B2781800EDED50 /* CocoaLumberjack.bundle */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = CocoaLumberjack.bundle;
+			remoteRef = E36B92B516B2781800EDED50 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84C08CF0149F72E6001D6500 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E341B18516AEAF81000046E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E341B19C16AEB04B000046E1 /* indexlog.html in Resources */,
+				E341B19D16AEB04B000046E1 /* jquery-1.4.2.min.js in Resources */,
+				E341B19E16AEB04B000046E1 /* README.txt in Resources */,
+				E341B19F16AEB04B000046E1 /* socket.html in Resources */,
+				E341B1A016AEB04B000046E1 /* styles.css in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E341B24316AEB281000046E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E341B2A116AEB91F000046E1 /* GenericLoggerFramework.bundle in Resources */,
+				E341B24F16AEB281000046E1 /* InfoPlist.strings in Resources */,
+				E341B25716AEB281000046E1 /* Default.png in Resources */,
+				E341B25916AEB281000046E1 /* Default@2x.png in Resources */,
+				E341B25B16AEB281000046E1 /* Default-568h@2x.png in Resources */,
+				E341B28B16AEB5FC000046E1 /* MainWindow.xib in Resources */,
+				E341B28C16AEB5FC000046E1 /* WebServerIPhoneViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E3D7BE6116AEA1C3006E6F40 /* PrepareFramework */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = PrepareFramework;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\nmkdir -p \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Versions/${FRAMEWORK_VERSION}/Headers\"\n\n# Link the \"Current\" version to \"${FRAMEWORK_VERSION}\"\nln -sfh ${FRAMEWORK_VERSION} \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Versions/Current\"\nln -sfh Versions/Current/Headers \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Headers\"\nln -sfh \"Versions/Current/${PRODUCT_NAME}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/${PRODUCT_NAME}\"\n\n# The -a ensures that the headers maintain the source modification date so that we don't constantly\n# cause propagating rebuilds of files that import these headers.\ncp -a \"${BUILT_PRODUCTS_DIR}/${PUBLIC_HEADERS_FOLDER_PATH}/\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Versions/${FRAMEWORK_VERSION}/Headers\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84C08C81149F6B42001D6500 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84C08CAF149F6C7A001D6500 /* WebLoggerHTTPConnection.m in Sources */,
+				84C08CB5149F6C7A001D6500 /* WebSocketLogger.m in Sources */,
+				E3D7BE9916AEA5EF006E6F40 /* CustomLogFormatter.m in Sources */,
+				E3D7BE9C16AEA5EF006E6F40 /* TestFormatter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E341B18316AEAF81000046E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E341B24116AEB281000046E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E341B25116AEB281000046E1 /* main.m in Sources */,
+				E341B27116AEB305000046E1 /* WebServerIPhoneAppDelegate.m in Sources */,
+				E341B27216AEB305000046E1 /* WebServerIPhoneViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E341B19516AEB026000046E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E341B18616AEAF81000046E1 /* GenericLoggerFrameworkResources */;
+			targetProxy = E341B19416AEB026000046E1 /* PBXContainerItemProxy */;
+		};
+		E341B26916AEB296000046E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84C08C84149F6B42001D6500 /* GenericLoggerFramework */;
+			targetProxy = E341B26816AEB296000046E1 /* PBXContainerItemProxy */;
+		};
+		E36B92B816B2782B00EDED50 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CocoaLumberjack;
+			targetProxy = E36B92B716B2782B00EDED50 /* PBXContainerItemProxy */;
+		};
+		E36B92BA16B2782B00EDED50 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CocoaHTTPServer;
+			targetProxy = E36B92B916B2782B00EDED50 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E341B18D16AEAF82000046E1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E341B18E16AEAF82000046E1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E341B24D16AEB281000046E1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E341B24E16AEB281000046E1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		84C08C90149F6B42001D6500 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "";
+				VALID_ARCHS = "armv6 armv7 i386 armv7s";
+			};
+			name = Debug;
+		};
+		84C08C91149F6B42001D6500 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "";
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "armv6 armv7 i386 armv7s";
+			};
+			name = Release;
+		};
+		84C08C93149F6B42001D6500 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = NO;
+				DSTROOT = /tmp/WebLogger.dst;
+				FRAMEWORK_SEARCH_PATHS = "${BUILT_PRODUCTS_DIR}";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WebLogger/GenericLoggerFramework-Prefix.pch";
+				GCC_VERSION = "";
+				HEADER_SEARCH_PATHS = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = GenericLoggerFramework;
+				PUBLIC_HEADERS_FOLDER_PATH = "${PROJECT_NAME}Headers";
+				SKIP_INSTALL = YES;
+				STRIP_STYLE = "non-global";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "";
+				VALID_ARCHS = "armv6 armv7 i386 armv7s";
+			};
+			name = Debug;
+		};
+		84C08C94149F6B42001D6500 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = NO;
+				DSTROOT = /tmp/WebLogger.dst;
+				FRAMEWORK_SEARCH_PATHS = "${BUILT_PRODUCTS_DIR}";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WebLogger/GenericLoggerFramework-Prefix.pch";
+				GCC_VERSION = "";
+				HEADER_SEARCH_PATHS = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = GenericLoggerFramework;
+				PUBLIC_HEADERS_FOLDER_PATH = "${PROJECT_NAME}Headers";
+				SKIP_INSTALL = YES;
+				STRIP_STYLE = "non-global";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "";
+				VALID_ARCHS = "armv6 armv7 i386 armv7s";
+			};
+			name = Release;
+		};
+		E341B19216AEAF82000046E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COMBINE_HIDPI_IMAGES = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				HEADER_SEARCH_PATHS = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(PROJECT_NAME)";
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		E341B19316AEAF82000046E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COMBINE_HIDPI_IMAGES = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				HEADER_SEARCH_PATHS = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(PROJECT_NAME)";
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		E341B26616AEB282000046E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GenericLoggerDemo/GenericLoggerDemo-Prefix.pch";
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				INFOPLIST_FILE = "GenericLoggerDemo/GenericLoggerDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E341B26716AEB282000046E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GenericLoggerDemo/GenericLoggerDemo-Prefix.pch";
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				INFOPLIST_FILE = "GenericLoggerDemo/GenericLoggerDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84C08C7F149F6B42001D6500 /* Build configuration list for PBXProject "GenericLoggerFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84C08C90149F6B42001D6500 /* Debug */,
+				84C08C91149F6B42001D6500 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84C08C92149F6B42001D6500 /* Build configuration list for PBXNativeTarget "GenericLoggerFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84C08C93149F6B42001D6500 /* Debug */,
+				84C08C94149F6B42001D6500 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E341B19116AEAF82000046E1 /* Build configuration list for PBXNativeTarget "GenericLoggerFrameworkResources" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E341B19216AEAF82000046E1 /* Debug */,
+				E341B19316AEAF82000046E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E341B26516AEB282000046E1 /* Build configuration list for PBXNativeTarget "GenericLoggerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E341B26616AEB282000046E1 /* Debug */,
+				E341B26716AEB282000046E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84C08C7C149F6B42001D6500 /* Project object */;
+}

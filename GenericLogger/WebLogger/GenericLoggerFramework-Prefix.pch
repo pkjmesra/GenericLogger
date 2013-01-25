@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'WebLogger' target in the 'WebLogger' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif
